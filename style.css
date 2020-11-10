@@ -407,12 +407,14 @@ svg{
 .ref h2{
     font-family:TitleFont;
     padding: 20px 0px;
+    font-weight:100;
 }
 
 .ref p {
     padding-bottom: 30px;
     font-size:11px;
     font-family: Light;
+    
 }
 
 .final{
@@ -421,17 +423,21 @@ svg{
 
 .final h2{
     display:flex;
+     font-family: TitleFont;
+     font-weight:100;
 }
+
+   
 
 .final button{
     margin-top: 20px;
-    padding: 5px 15px;
-    border-radius:10px;
+    padding: 10px 32px;
+    border-radius:30px;
     background-color:#00a976;
     cursor:pointer;
     color: White;
     border:0;
-    font-family:Light;
+    font-family:Regular;
     font-size:10px;
-    font-weight:500
+    font-weight:800
 }
