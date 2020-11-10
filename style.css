@@ -22,6 +22,7 @@
     padding:0px;
     box-sizing:border-box;
     color: #211f5e;
+  
 }
 
 a{
@@ -38,7 +39,9 @@ img{
     margin:auto;
 }
 
-
+html{
+    height:max-content
+}
 
 body {
     background: rgb(204,204,204); 
@@ -54,7 +57,7 @@ body .page {
 
 @page {
     size: A4;
-    margin: 0;
+    margin: 0 !important;
   }
 
 @media print {
@@ -64,11 +67,12 @@ body .page {
     }
 .page {
     display:flex;
-    margin: 0;
+    margin: 0 !important;
+    padding: 0;
     margin-left: auto ;
     box-shadow: 0;
     width: 21cm;
-    height: 29.6cm;
+    height: 29.64cm !important;
     
 }
 
@@ -303,7 +307,7 @@ svg{
 .education{
     padding: 60px;
     padding-top: 60px;
-    padding-bottom:20px;
+    padding-bottom:0px;
 }
 
 .education h1{
