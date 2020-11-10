@@ -1,0 +1,287 @@
+/********************** fonts***/
+
+@font-face {
+    font-family:TitleFont;
+    src:url('./fonts/titles-font.woff')
+}
+
+@font-face {
+    font-family:Light;
+    src:url('./fonts/light.woff')
+}
+
+@font-face {
+    font-family:Regular;
+    src:url('./fonts/regular.woff')
+}
+
+/*********/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    color: #211f5e;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}
+
+
+
+img{
+    height:125px;
+    border-radius: 100%;
+    display:flex;
+    margin:auto;
+}
+
+body {
+    background: rgb(204,204,204); 
+ }
+.page {
+    width: 21cm;
+  height: 29.7cm;
+  background: white;
+  margin: 0px;
+
+
+
+
+}
+
+@page {
+    size: A4;
+    margin: 0;
+  }
+
+@media print {
+    *{
+        margin: 0px;
+        overflow:hidden
+    }
+.page {
+    margin: 0;
+    box-shadow: 0;
+    width: 21cm;
+    height: 29.6cm;
+}
+
+
+
+
+}
+
+html{
+   display:flex;
+   justify-content:center;
+}
+
+
+/****************  Up  ***/
+.up{
+  width:100%;
+  padding:60px;
+  padding-top: 40px;
+  display: flex;
+  justify-content:space-between;
+  padding-bottom:35px;
+}
+
+.up .title .name{
+    color:rgb(32,31,94);
+    font-family: TitleFont Regular;
+    font-size:45px ;
+    font-weight:100;
+    width:270px;
+  
+}
+
+.cool{
+    position: relative;
+    display:flex;
+    width: max-content;
+}
+
+.cool::after{
+  content:'';
+  position:absolute;
+  height: 15%;
+  width:100%; 
+  background: linear-gradient(90deg,#40b176 10%,transparent 75%);
+  bottom: 6px;
+  left: 0px;
+  z-index: 1;
+  opacity: .9;
+}
+
+.up .title .adresse,.bottom .experience__title span{
+    font-family: Regular;
+    opacity: .3;
+    font-size: 11px;
+}
+
+.up .quote{
+    margin-top: 70px;
+    font-family: 'TitleFont';
+    color:rgb(32,31,94);
+    font-weight: lighter;
+    font-size: 12px;
+    width: 350px
+}
+
+.up__right{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 20px;
+    background-color:#eaf1fa;
+}
+
+.up__right__container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 170px;
+    height:223px;
+}
+
+.image{
+    margin-bottom: 10px;
+    padding-bottom:20px;
+    border-bottom: .1px solid #daebf2;
+}
+
+.info div:first-child svg{
+    height:15.82px;
+    width:16.818px
+}
+
+.info div:nth-child(2) svg{
+    height:14.82px;
+    width:17.087px;
+}
+
+.info div:nth-child(3) svg{
+    height:18.82px;
+    width:15.419px
+}
+
+.info div{
+    display:flex;
+    align-items:center;
+    font-size:10px;
+    font-family: Light;
+}
+
+svg{
+    margin:auto;
+    
+}
+
+.svg__container{
+    margin-right: 15px;
+    width:30px;
+    height:30px
+}
+
+.up hr{
+    margin:15px;
+    height:.5px;
+    font-size:1px;
+    border:1px solid grey 
+}
+
+/****************middle**************/
+
+.middle{
+  display:flex;
+  justify-content:space-between;
+  padding:60px;
+  padding-top: 0px;
+  padding-bottom:30px;
+}
+
+.middle__left{
+    width:300px
+}
+
+.middle h2,.bottom h2{
+    font-family: TitleFont;
+    font-weight: 100;
+    font-size:22px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.middle__left .p__container{
+    border-top: .1px solid #daebf2 ;
+    width:400px
+}
+
+.middle__left p{
+    width: 330px;
+}
+
+.middle__left p,.bottom p{
+    padding:30px 0px;
+    font-family:Light;
+    font-size:11px;
+    line-height:1.6;
+}
+
+.subjects {
+    border-top: .1px solid #daebf2 ;
+    padding:30px 0px;
+    width:210px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.subject{
+    display: flex;
+    margin:5px;
+    width:max-content;
+    background-color:#211f5e;
+    color:white;
+    padding:10px 20px;
+    border-radius:15px;
+    font-family: Light;
+    font-size:10px
+}
+
+/****** bottom*********/
+
+.bottom{
+    display: flex;
+    padding: 60px;
+    padding-top:0px;
+    flex-direction: column;
+}
+
+.experience{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0px;
+    border-top: .1px solid #daebf2 ;
+}
+
+.experience__title{
+    font-size:11px;
+    font-family: Regular;
+    font-weight: 500;
+}
+
+.experience__desc{
+    width: 360px;
+}
+
+.bottom p {
+    padding: 0px;
+}
+
+
+
+/**********************Page 2 ******************/
